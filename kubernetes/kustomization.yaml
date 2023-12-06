@@ -10,5 +10,4 @@ images:
 - name: docker.io/springsandbox07/petclinic_backend
   newTag: 61b8e33
 - name: docker.io/springsandbox07/petclinic_frontend
-  newName: docker.io/springsandbox07/petclinic_frontend
-  newTag: 97615a3
+  newTag: "1483859"
