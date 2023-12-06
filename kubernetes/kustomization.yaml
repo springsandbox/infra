@@ -1,15 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - frontend-deployment.yml
-  - frontend-service.yml
-  - backend-deployment.yml
-  - backend-service.yml
+- frontend-deployment.yml
+- frontend-service.yml
+- backend-deployment.yml
+- backend-service.yml
 namespace: default
 images:
-  - name: docker.io/springsandbox07/petclinic_frontend
-    newName: docker.io/springsandbox07/petclinic_frontend
-    newTag: "97615a3"
-  - name: docker.io/springsandbox07/petclinic_backend
-    newName: docker.io/springsandbox07/petclinic_backend
-    newTag: "0458e10"
+- name: docker.io/springsandbox07/petclinic_backend
+  newTag: 61b8e33
+- name: docker.io/springsandbox07/petclinic_frontend
+  newName: docker.io/springsandbox07/petclinic_frontend
+  newTag: 97615a3
